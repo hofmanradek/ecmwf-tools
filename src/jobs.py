@@ -77,6 +77,8 @@ def main():
     step  = datetime.timedelta(days=1)
     out_dir = "../jobs"
     
+    
+    
     prepare_job_files(start, end, step, out_dir)
     
     submit_jobs(out_dir)
