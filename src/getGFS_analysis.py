@@ -60,9 +60,6 @@ def main(d0, d1, data_type):
 
                 the_url = FTPSERVER+"/"+Ym+"/"+Ymd+"/"+filename
 
-                #incerement to the next daty (another directory)
-                d += datetime.timedelta(days=1)
-
                 hr = "%2.2d" % (int(syn_hr[:2])+int(fct_hr))
                 s += Ymd+" "+hr+"0000"
                 s += "      " + filename
@@ -88,6 +85,10 @@ def main(d0, d1, data_type):
 
                 print "Executing " + the_command
                 os.system(the_command)
+        
+				#incerement to the next daty (another directory)
+        d += datetime.timedelta(days=1)
+
 
     with open(out_path+os.sep+"AVAILABLE", "w+") as f:
         f.write(s)
