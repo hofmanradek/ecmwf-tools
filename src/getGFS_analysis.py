@@ -111,5 +111,5 @@ if __name__ == "__main__":
 
         main(d0, d1, data_type)
     else:
-        print "Usage: getGFS_analysis.py <from YYYYMMDD> <to YYYYMMDD> <[3=1 deg,40.5deg]>"
+        print "Usage: getGFS_analysis.py <from YYYYMMDD> <to YYYYMMDD> <[3=1 deg,4=0.5deg]>"
 
